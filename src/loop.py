@@ -31,3 +31,7 @@ for value in raw_data:
     if not math.isnan(value):
         filtered_data.append(value)
 print(filtered_data)  # [56.2, 51.7, 55.3, 52.5, 47.8]
+
+# zip 并行循环
+for a, b, c in zip(('a', 'b', 'c', 'd'), (10, 20, 30, 40), ('@', '#', '$')):
+    print("{0}---{1}----{2}".format(a, b, c))
